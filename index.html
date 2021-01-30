@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Celeste Glavin</title>
+    <style>
+      body {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      canvas {
+        position: absolute;
+        z-index: 1;
+        border: 1px solid black;
+      }
+
+      .container {
+        position: absolute;
+        z-index: 2;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-color: rgba(0, 0, 255, 0.5);
+        box-shadow: 0 0 3000px rgba(0, 0, 255, 1);
+      }
+      p {
+        font-size: x-large;
+        margin: 0;
+        pointer-events: none;
+      }
+      caption {
+        font-size: 10px;
+        pointer-events: none;
+      }
+      span {
+        padding: 16px 0;
+        pointer-events: none;
+      }
+
+      .link-container {
+        padding-top: 16px;
+        font-size: 14px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas></canvas>
+    <div class="container">
+      <p>Celeste Glavin</p>
+      <caption>
+        web developer
+      </caption>
+      <div class="link-container">
+        <a target="_blank" href="https://github.com/cmugla">github</a>
+        <span>|</span>
+        <a target="_blank" href="https://www.linkedin.com/in/celesteglavin/"
+          >linkedIn</a
+        >
+        <span>|</span>
+        <a target="_blank" href="https://www.instagram.com/__cmugla/"
+          >instagram</a
+        >
+      </div>
+    </div>
+    <script src="./canvas.ts"></script>
+  </body>
+</html>
